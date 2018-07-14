@@ -1,6 +1,9 @@
 Mocha Jenkins Reporter
 ======================
 
+_*Emergency release*_
+This is a fork of honorable [mocha-jenkins-reporter](https://github.com/juhovh/mocha-jenkins-reporter) published urgently to address the vulnerability issue. As soon as version with updated `mocha` will be released in the main project, this package will become obsolete and deprecated.
+
 This reporter is useful if you want to run Node.js backend tests using mocha and need a nicely formatted Jenkins reports of the test runs. The existing `xunit` reporter is very similar, but doesn't make it possible to output both XML report and a console output at the same time, which would often be useful with Jenkins.
 
 The `xunit` reporter also doesn't handle separate tests suites but adds all tests to a single suite instead, this reporter instead combines nested test suites to a single suite and uses that in the reports. As a nice plus, this reporter also shows the running time of each suite separately. All the code is released under the `MIT` license which can be found from the end of this file.
